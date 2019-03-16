@@ -1,0 +1,46 @@
+{
+	"manifest_version": 2,
+	"short_name": "OpenWeb Network",
+	"name": "__MSG_appName__",
+	"description": "__MSG_appDescription__",
+	"version": "1.0.15",
+	"author": "openweb.network",
+	"default_locale": "en",
+	"homepage_url": "https://openweb.network",
+	"background": {
+        "scripts": [
+            "js/web3.min.js",
+            "js/openweb.js",
+            "background.js"
+        ],
+        "persistent": true
+    },
+	"icons": {
+		"16": "images/icon-16.png",
+		"32": "images/icon-32.png",
+		"64": "images/icon-64.png",
+		"128": "images/icon-128.png"
+	},
+    "permissions": [
+        "background",
+        "proxy",
+        "alarms",
+        "unlimitedStorage",
+        "http://*.ow/*",
+        "webNavigation",
+        "storage",
+        "tabs",
+        "webRequest",
+        "webRequestBlocking"
+    ],
+    "browser_action": {
+        "default_popup": "popup.html",
+		"default_icon": "images/icon-32.png",
+		"default_title": "__MSG_title__"
+    },
+    "web_accessible_resources": [
+        "js/web3.min.js",
+        "page.html"
+    ],
+    "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
+}

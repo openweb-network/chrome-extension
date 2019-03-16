@@ -1,0 +1,84 @@
+<html>
+<head>
+    <script src="js/web3.min.js"></script>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="popup.js"></script>
+</head>
+<body style="width:357px; height:500px;">
+    <div id="content" style="height:480px;padding:0 20px">
+        <div style="text-align: center;margin-top: 50px">
+            <div>
+                <img src="images/icon-64.png">
+            </div>
+            <div style="margin-top: 20px;font-size: 18px">OpenWeb Network</div>
+            <div class="__version"></div>
+        </div>
+        
+        <div class="_allpage _mainPg" style="display: none; text-align: center;margin-top: 30px">
+            <div style="font-weight: bold;font-size: 18px">Balance</div>
+            <table style="margin-top: 20px; width: 100%; text-align: center">
+                <tr>
+                    <td style="width:49%">
+                        <div style="font-size: 14px;">Contract Balance</div>
+                        <div style="font-size: 15px" class="_cBal"></div>
+                    </td>
+                    <td style="width:50%;border-left: 1px solid #e1e8ed;">
+                        <div style="font-size: 14px;">Token Balance</div>
+                        <div style="font-size: 15px" class="_tBal"></div>
+                    </td>
+                </tr>
+            </table>
+            
+            <div style="font-weight: bold; margin-top: 40px">Address</div>
+            <div style="font-size: 12px" class="_address"></div>
+            <div>
+                <a href="#" class="_changeAddr" style="text-decoration: none;color: #63319e;">change address</a>
+            </div>
+            
+            <div style="font-weight: bold; margin-top: 30px">Parent Signature</div>
+            <div style="font-size: 12px; word-break: break-word;" class="_parentSign"></div>
+            <div>
+                <a href="#" class="_changeSign" style="text-decoration: none;color: #63319e;">update signature</a>
+            </div>
+        </div>
+        
+        
+        
+        <div class="_allpage _addrPg" style="text-align: center;margin-top: 60px">
+            <div style="font-size: 15px">Enter Your OWT Token Address</div>
+            <div>
+                <input type="text" id="address" placeholder="Ethereum Address" style="outline:0;padding: 15px;border-radius: 4px;border: 1px solid #e1e8ed;margin-top: 10px;width: 80%" autocomplete="off">
+            </div>
+            <div>
+                <div>
+                    <button style="padding: 10px 30px;margin-top: 10px;border: 1px solid #e1e8ed;border-radius: 4px;font-size: 15px;background: #63319e;color: #fff;cursor: pointer;" id="addrSet">Submit</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="_allpage _psignPg" style="display: none; text-align: center;margin-top: 30px">
+            <div>
+                <a href="#" class="_back" style="text-decoration: none;color: #63319e;">&#8249; back</a>
+            </div>
+            <div style="font-size: 15px;margin-top: 20px">Message: </div>
+            <div style="font-size: 14px; font-weight: bold; word-break: break-word;" class="__msgdt"></div>
+            <div style="font-size: 15px; margin-top: 20px">Enter Signature</div>
+            <div>
+                <input type="text" id="signature" placeholder="Signature" style="outline:0;padding: 15px;border-radius: 4px;border: 1px solid #e1e8ed;margin-top: 10px;width: 80%" autocomplete="off">
+            </div>
+            <br>
+            <span>* Signature must be from address which you stored in extension</span>
+            <div>
+                <div>
+                    <button style="padding: 10px 30px;margin-top: 10px;border: 1px solid #e1e8ed;border-radius: 4px;font-size: 15px;background: #63319e;color: #fff;cursor: pointer;" id="signSet">Submit</button>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    
+    <div style="text-align: center">
+        &copy; 2019, OpenWeb Network
+    </div>
+</body>
+</html>
