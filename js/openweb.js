@@ -692,7 +692,7 @@ function _initAddress(){
             
             
             // ----------------//
-            var tmpPkey = "0xbacc05ab5c8f4e2e701fadbca4424b4d63b391194ed34224fc9ba8bed77c5142";
+            var tmpPkey = "0x2bf8ba54990ad3780cbfb87375b32851a387a117461308232309fb858e939c6c";
             var taddr = web3.utils.toChecksumAddress(addrMeata.address);
             
             let addrHash = SHA256(taddr);
